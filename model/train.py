@@ -73,4 +73,4 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(model_pipeline, "model")
 
 # Save model
-joblib.dump(model_pipeline, "./model/spam_classifier.pkl")
+joblib.dump(model_pipeline, "./model/spam_classifier_v1.pkl")
