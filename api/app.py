@@ -8,7 +8,7 @@ app = FastAPI()
 # Load Model
 
 try:
-    model = joblib.load("./model/spam_classifier.pkl")
+    model = joblib.load("./model/spam_classifier_v1.pkl")
     print("✅ Model Loaded Successfully!!")
 except Exception as e:
     print(f"❌ Error Loading Model: {e}")
