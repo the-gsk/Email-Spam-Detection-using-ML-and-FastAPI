@@ -1,18 +1,19 @@
 
 import joblib
 import uvicorn
-from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi import FastAPI
+
 
 app = FastAPI()
 
-# Load Model
+# Loading the model
 
 try:
     model = joblib.load("./model/spam_classifier_v1.pkl")
-    print("✅ Model Loaded Successfully!!")
+    print("The model Loaded Successfully!!")
 except Exception as e:
-    print(f"❌ Error Loading Model: {e}")
+    print(f"There is error in loading Model: {e}")
 
 # Input Schema
 class EmailInput(BaseModel):
@@ -20,7 +21,7 @@ class EmailInput(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Spam Detection API is Running!"}
+    return {"message": "Spam Detection API is Running successfully!"}
 
 @app.post("/predict")
 def predict_spam(email: EmailInput):
@@ -28,5 +29,5 @@ def predict_spam(email: EmailInput):
     return {"spam": bool(prediction)}
 
 if __name__ == "__main__":
-    print("🚀 Starting FastAPI server...")
+    print("Starting FastAPI server...")
     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
