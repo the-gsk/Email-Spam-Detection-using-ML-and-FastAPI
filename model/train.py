@@ -54,7 +54,7 @@ with mlflow.start_run():
     mlflow.sklearn.log_model(model_pipeline, "model")
 
 # Save model
-model_path = "./model/spam_classifier.pkl"
+model_path = "./model/spam_classifier_v1.pkl"
 joblib.dump(model_pipeline, model_path)
 
 print(f"Model saved successfully at {model_path}")
