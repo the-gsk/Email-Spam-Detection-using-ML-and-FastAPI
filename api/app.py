@@ -1,27 +1,25 @@
-
-import joblib
 import uvicorn
-from pydantic import BaseModel
+from pydantic import baseModel
 from fastapi import FastAPI
-
+import joblib
 
 app = FastAPI()
 
-# Loading the model
+## Loading the model from pickle file
 
 try:
     model = joblib.load("./model/spam_classifier_v1.pkl")
-    print("The model Loaded Successfully!!")
+    print("The model successfully loaded and ready to use!!")
 except Exception as e:
-    print(f"There is error in loading Model: {e}")
+    print(f"There is an error in loading models: {e}")
 
 # Input Schema
-class EmailInput(BaseModel):
+class EmailInput(baseModel):
     text: str
 
 @app.get("/")
 def home():
-    return {"message": "Spam Detection API is Running successfully!"}
+    return {"message": "Spam dection API is running successfully !!"}
 
 @app.post("/predict")
 def predict_spam(email: EmailInput):
