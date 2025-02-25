@@ -6,9 +6,10 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # Load Model
+
 try:
     model = joblib.load("./model/spam_classifier.pkl")
-    print("✅ Model Loaded Successfully!")
+    print("✅ Model Loaded Successfully!!")
 except Exception as e:
     print(f"❌ Error Loading Model: {e}")
 
