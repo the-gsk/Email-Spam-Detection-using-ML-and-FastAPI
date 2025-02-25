@@ -82,9 +82,34 @@ docker run -p 8000:8000 spam-detection-api
 ```
 Now, your API is running inside Docker!
 
+## Test it locally
+
+docker run -p 8000:8000 spam-detection-api
+
+curl http://localhost:8000/best_params
+
+## Docker Hub
+
+-- 1st create docker hub account
+```sh  docker login
+```
+
+```sh docker tag spam-detection-api herambithape/spam-detection-api:latest 
+```
+
+```sh docker push herambithape/spam-detection-api:latest   ```
+
+```sh docker pull herambithape/spam-detection-api:latest ```
+
+```sh docker run -p 8000:8000 herambithape/spam-detection-api:latest      ```
+
+
+
+
+
 ---
 
-<!-- ## 📤 Push to Docker Hub (Optional)
+## 📤 Push to Docker Hub (Optional)
 1️⃣ Login to Docker Hub:
 ```sh
 docker login
