@@ -84,7 +84,7 @@ Now, your API is running inside Docker!
 
 ---
 
-## 📤 Push to Docker Hub (Optional)
+<!-- ## 📤 Push to Docker Hub (Optional)
 1️⃣ Login to Docker Hub:
 ```sh
 docker login
@@ -97,7 +97,7 @@ docker tag spam-detection-api your_dockerhub_username/spam-detection-api
 ```sh
 docker push your_dockerhub_username/spam-detection-api
 ```
-Now, others can pull and run your container.
+Now, others can pull and run your container. -->
 
 ---
 
