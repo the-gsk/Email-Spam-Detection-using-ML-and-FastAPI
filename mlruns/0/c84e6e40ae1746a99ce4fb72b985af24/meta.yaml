@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gaurav/Documents/GitHub/Email-Spam-Detection-using-ML-and-FastAPI/mlruns/0/c84e6e40ae1746a99ce4fb72b985af24/artifacts
+end_time: 1740675991693
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c84e6e40ae1746a99ce4fb72b985af24
+run_name: respected-goose-860
+run_uuid: c84e6e40ae1746a99ce4fb72b985af24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740675986541
+status: 3
+tags: []
+user_id: gaurav
