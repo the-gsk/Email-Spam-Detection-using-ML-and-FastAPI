@@ -88,20 +88,25 @@ docker run -p 8000:8000 spam-detection-api
 
 curl http://localhost:8000/best_params
 
-## Docker Hub
+## Pull from Docker Hub
 
 -- 1st create docker hub account
-```sh  docker login
+```sh  
+docker login
 ```
 
-```sh docker tag spam-detection-api herambithape/spam-detection-api:latest 
+```sh 
+docker tag spam-detection-api herambithape/spam-detection-api:latest 
 ```
 
-```sh docker push herambithape/spam-detection-api:latest   ```
 
-```sh docker pull herambithape/spam-detection-api:latest ```
+```sh 
+docker pull herambithape/spam-detection-api:latest 
+```
 
-```sh docker run -p 8000:8000 herambithape/spam-detection-api:latest      ```
+```sh 
+docker run -p 8000:8000 herambithape/spam-detection-api:latest      
+```
 
 
 
@@ -159,18 +164,18 @@ Now, others can pull and run your container. -->
 ---
 
 ## 📌 Future Enhancements
-✅ Implement deep learning models like LSTMs.
-✅ Add more preprocessing techniques for better accuracy.
-✅ Deploy on cloud services like AWS/GCP.
+- ✅ Implement deep learning models like LSTMs.
+- ✅ Add more preprocessing techniques for better accuracy.
+- ✅ Deploy on cloud services like AWS/GCP.
 
 ---
 
 ## 👨‍💻 Author
-🔹 **Gaurav Shankar Kumar**
+- 🔹 **Gaurav Shankar Kumar**
 📧 gauravshankarkumar@gmail.com 
-🔹 **Heramb Ithape**
+- 🔹 **Heramb Ithape**
 📧 heramb.analytics@gmail.com 
- **Shivram Ayyagari**
+- 🔹  **Shivram Ayyagari**
 📧 shivram.nsn@gmail.com
   
 
