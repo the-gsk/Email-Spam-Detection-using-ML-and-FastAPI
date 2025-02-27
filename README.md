@@ -67,7 +67,10 @@ python api/app.py
 uvicorn api.app:app --host 0.0.0.0 --port 8000 --reload
 ```
 - 🔹 The API will be available at: [http://localhost:8000](http://localhost:8000)
+![Sample Image](images/test1.png)
+
 - 🔹 API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
+![Sample Image](images/test2.png)
 
 ---
 
@@ -149,6 +152,8 @@ Now, others can pull and run your container. -->
   "spam": true
 }
 ```
+
+![Sample Image](images/test3.png)
 
 ### 🔹 **3. Train Model**
 - **`POST /train`** → Retrains the model with new data.
